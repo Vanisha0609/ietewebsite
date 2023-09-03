@@ -1,0 +1,375 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.container{
+    text-align:center;
+    background:linear-gradient(rgba(73,98,246,0.4),rgba(40,180,173, 0.6));
+}
+.header{
+    padding-top:60px;
+    color:#464452;
+    font-family: 'Concert One', cursive;
+    font-family: 'Kalam', cursive;
+    font-size:20px;
+    margin:auto;
+    line-height:40px;
+    
+}
+.sub-container{
+    max-width:1500px;
+    margin:auto;
+    padding:48px 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.members{
+    margin:10px;
+    padding:22px;
+    max-width:22%;
+    cursor:pointer;
+    transition:0.4s;
+    box-sizing:border-box;
+
+}
+.members:hover{
+    background: rgba(40, 180, 173, 0.6);
+    border-radius: 12px;
+
+}
+.members img{
+    width:200px;
+    height:200px;
+}
+.name{
+    padding:12px;
+    font-weight:bold;
+    font-size:16px;
+    text-transform:uppercase;
+}
+.zenko{
+    font-style:italic;
+    color:#888;
+}
+.about{
+    margin:20px 0;
+    font-weight:lighter;
+    color:#464452;
+}
+.mail{
+    margin:0.5px;
+}
+@media screen and(max-width:600px){
+    .members{
+      max-width:100%;  
+    }
+}
+.footer{
+    margin-top:10px;
+    
+    padding:70px 15%;
+    background:#464452;
+    color:#E1E2E6;
+    display:flex;
+}
+.footer div{
+    text-align:center;
+}
+.col-2{
+    flex-grow: 2;
+    margin-left:280px;
+} 
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display:block;
+    text-decoration: none;
+    color:#E1E2E6;
+    margin-bottom:10px;
+    text-align: left;
+    
+}
+.col-3{
+    margin-left:200px;
+    text-align:left;
+}
+form input{
+    width:300px;
+    height:45px;
+    border-radius:4px;
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline:none;
+    border:none;
+}
+form button{
+    background:transparent;
+    border:2px solid #fff;
+    color:#E1E2E6;
+    border-radius: 30px;
+    padding:10px 30px;
+    font-size:15px;
+    cursor:pointer;
+    
+}
+form button:hover{
+    letter-spacing: .2rem;
+}
+.home{
+    min-height:100vh;
+    background:linear-gradient(rgba(73,98,246,0.4),rgba(40,180,173, 0.6))
+    no-repeat;
+}
+.home .content{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top:30px;
+    padding-bottom: 8rem;
+    text-align:center;
+
+}
+.home .content h1{
+    font-size: 5rem;  
+    color:#E1E2E6;
+    font-family: 'Concert One', cursive;
+    font-family: 'Kalam', cursive; 
+    padding:20px 50px;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+.home .content p{
+    font-size: 20px;
+    color:black;
+    font-family: 'Concert One', cursive;
+    font-family: 'Kalam', cursive; 
+    padding:20px 300px;
+}
+.home .content button{
+    height:2.8rem;
+    width:12rem;
+    border-radius:5rem;
+    background:#464452;
+    color:#ffffff;
+    font-size: 25px;
+    cursor:pointer;
+    transition:0.2s;
+    border:none;
+    box-shadow:0 .3rem 1rem rgba(0,0,0,.3);
+}
+.home .content button:hover{
+    letter-spacing: .2rem;
+}
+.home .box-container{
+    display:flex;
+    align-items:center;
+    justify-content:center ;
+    flex-wrap:wrap;
+}
+.home .box-container .box{
+    height:20rem;
+    width:25rem;
+    background:whitesmoke;
+    text-align:center;
+    border-radius:1rem;
+    box-shadow:0 .3rem .5rem rgba(0,0,0,.5);
+    margin:20px;
+    cursor:pointer;
+}
+.home .box-container .box i{
+    line-height:2rem;
+    text-align:center;
+    font-size: 3rem;
+    margin:1rem;
+    transition: 0.2s;
+}
+.home .box-container .box h3{
+    font-size: 28px;
+    font-family: 'Concert One', cursive;
+    font-family: 'Kalam', cursive; 
+    color:#464452;
+    transition: .2s;
+}
+.home .box-container .box p{
+    font-size:19px;
+    padding: 10px 22px;
+    display:block;
+    text-align:left;
+}
+.home .box-container .box:hover{
+    background-color:rgba(73, 98, 246, 0.5); 
+}
+.nav{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 0px;
+}
+.logo{
+    
+    cursor:pointer;
+    left:10px;
+    bottom:10px;
+}
+nav ul{
+    list-style:none;
+    text-align:right;
+    padding-right:45px;
+    background:#464452;
+}
+nav ul li{
+    display:inline-block;
+    padding:30px 24px;
+}
+nav ul li a{
+   color:#ffffff ;
+   font-family: 'Concert One', cursive;
+   font-family: 'Kalam', cursive;
+   font-family: 'Oswald', sans-serif;
+   text-decoration: none;
+   font-size:20px;
+}
+nav ul li ul.dropdown li{
+    display:block; 
+}
+nav ul li ul.dropdown{
+    background:rgba(70,68,82,0.4) ;
+    position:absolute;
+    display:none; 
+    width:9%;
+    z-index:999;  
+}
+nav ul li a:hover{
+    background:#888;  
+    padding:8px 8px;
+    border-radius: 5px;
+}
+nav ul li:hover ul.dropdown{
+    display:block;  
+}
+
+.home .hogwarts{
+    display:flex;
+    align-items:center;
+    justify-content:center ;
+    flex-wrap:wrap;
+}
+.home .hogwarts .dobby{
+    height:26rem;
+    width:20rem;
+    background:whitesmoke;
+    text-align:center;
+    border-radius:1rem;
+    box-shadow:0 .3rem .5rem rgba(0,0,0,.5);
+    margin:10px;
+    cursor:pointer;
+}
+.home .hogwarts .dobby i{
+    line-height:2rem;
+    text-align:center;
+    font-size: 3rem;
+    margin:1rem;
+    transition: 0.2s;
+}
+.home .hogwarts .dobby h3{
+    font-size: 25px;
+    font-family: 'Concert One', cursive;
+    font-family: 'Kalam', cursive; 
+    color:#464452;
+    transition: .2s;
+}
+.home .hogwarts .dobby p{
+    color:#888;
+    font-size:19px;
+    padding: 10px 22px;
+    display:block;
+    text-align:left;
+}
+.home .hogwarts .dobby:hover{
+    background-color:rgba(73, 98, 246, 0.5); 
+}
+.home .hogwarts .weezy{
+    height:5rem;
+    width:40rem;
+    background:whitesmoke;
+    text-align:center;
+    box-shadow:0 .3rem .5rem rgba(0,0,0,.5);
+    margin:30px 300px;
+    cursor:pointer;
+}
+.home .hogwarts .weezy h3{
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+    font-family: 'Kalam', cursive; 
+    color:#464452;
+    transition: .2s;
+}
+.home .hogwarts .weezy p{
+    color:#000000;
+    font-size:18px;
+    padding: 10px 22px;
+    margin:5px 10px;
+    display: block;
+    text-align:center;
+}
+.home .hogwarts .weezy:hover{
+    background-color:rgba(40, 180, 173, 0.5); 
+}
+.breadcrumbs .container h2{
+    font-size: 4rem;  
+    color:#E1E2E6;
+    font-family: 'Concert One', cursive;
+    font-family: 'Kalam', cursive; 
+    padding:10px 50px;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+.about .section-title p{
+    font-family: 'Concert One', cursive;
+    font-family: 'Kalam', cursive; 
+    font-size: 30px;
+    color: #464452;
+
+}
+.about .section-title p p{
+         font-size: 50px;
+}
+.container h3{
+    letter-spacing: 1px;
+    padding:8px 10px;
+}
+.home .box-container .spideyman h3{
+    font-size: 28px;
+    font-family: 'Concert One', cursive;
+    font-family: 'Kalam', cursive; 
+    color:#464452;
+    transition: .2s;
+}
+.home .box-container .spideyman p{
+    font-size:15px;
+    padding: 10px 22px;
+    display:block;
+    text-align:left;
+}
+.home .box-container .spideyman:hover{
+    background-color:rgba(73, 98, 246, 0.5); 
+}
+.home .box-container .spideyman{
+    height:15rem;
+    width:14rem;
+    background:whitesmoke;
+    text-align:center;
+    box-shadow:0 .3rem .5rem rgba(0,0,0,.5);
+    margin:20px;
+    cursor:pointer;
+}
+.con{
+    margin-left:100px;
+    text-align:left;
+}
